@@ -7,9 +7,11 @@ export default function Home() {
     <div>
       <h1>Мой первый проект на Next.js</h1>
       <p>Выполнила: Абрамова Е., группа ИС-24/9</p>
-      <Link href="/about">Обо мне</Link>
+      <Link 
+      className="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:rounded" 
+      href="/about">Обо мне</Link>
 
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg-grid-cols-3 gap-6">
         <Card
           title="Первая карточка"
           text="Текс первой карточки"
